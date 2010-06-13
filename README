@@ -1,0 +1,14 @@
+This program automatically harvests "good" function arguments, pickles them, and store them in a shelf.  When the program is working properly, a global (HARVEST) can be set to "on".  Each function with the @harvest decorator stores away the parameters and result as a unit test for later.
+
+Some problems with this idea:
+
+- Refactoring is an issue, if a function name is changed it breaks the lookup. (possible fix: @harvest("unique-key"), and that for lookup )
+
+- Some things can't be pickled, so those args would also fail 
+
+- Mutable state isn't considered at all.
+
+
+That said, I think it might be worth experimenting with further.
+
+Sorry for no comments, and poor style - just wanted to see it work.
