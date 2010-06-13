@@ -2,7 +2,7 @@ This program automatically harvests "good" function arguments, pickles them, and
 
 Some problems with this idea:
 
-- Refactoring is an issue, if a function name is changed it breaks the lookup. (possible fix: @harvest("unique-key"), and that for lookup )
+- Refactoring is an issue, if a function name is changed it breaks the lookup. (possible fix: @harvest("unique-key"), and use that for lookup )
 
 - Some things can't be pickled, so those args would also fail 
 
