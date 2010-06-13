@@ -1,3 +1,5 @@
+Automatic Unittest Generation
+
 This program automatically harvests "good" function arguments, pickles them, and store them in a shelf.  When the program is working properly, a global (HARVEST) can be set to "on".  Each function with the @harvest decorator stores away the parameters and result as a unit test for later.
 
 Some problems with this idea:
